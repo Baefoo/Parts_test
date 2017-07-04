@@ -1,7 +1,7 @@
-Servo motor Calibration .ino source code \n
-Command list: h, i, p, +, - \n
-h: help \n
-i: info \n 
-p: pin setting \n
-+: + value \n 
--: - value \n 
+Servo motor Calibration .ino source code.  
+[Command list: h, i, p, +, - ]
+h: help,  
+i: info,  
+p: pin setting, 
++: + value,  
+-: - value, 
