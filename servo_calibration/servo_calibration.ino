@@ -12,6 +12,7 @@ void setup() {
   d_pin = 0;
 
   Serial.println("This program calibrates the servo motor.\nYou must set the pin number(e.g: p 3).");
+  Serial.println("How to change data e.g: + 3  or  - 2 etc..");
   printCommandList();
 }
 
@@ -66,12 +67,15 @@ void setDigitalPin() {
 
 void calibration(char op) {
   if (d_pin >= 2 && d_pin <= 13) {
+    int temp_value = Serial.parseInt();
     switch(op) {
       case '+':
+      cali_count += temp_value;
         if (90+cali_count < 180)
           cali_count++;
       break;
       case '-':
+      cali_count -= temp_value;
         if (90+cali_count > 0)
            cali_count--;
       break;
