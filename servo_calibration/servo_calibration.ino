@@ -33,6 +33,7 @@ void loop() {
       case '+':
       case '-':
         calibration(command);
+        delay(20);
       break;
     }
   }
